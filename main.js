@@ -689,8 +689,8 @@ function transitionEndEmulator(duration) {
 }
 
 function setTransitionEndSupport() {
-  (jquery__WEBPACK_IMPORTED_MODULE_0___default().fn.emulateTransitionEnd) = transitionEndEmulator
-  ;(jquery__WEBPACK_IMPORTED_MODULE_0___default().event.special)[Util.TRANSITION_END] = getSpecialTransitionEndEvent()
+  (jquery__WEBPACK_IMPORTED_MODULE_0___default().fn).emulateTransitionEnd = transitionEndEmulator
+  ;(jquery__WEBPACK_IMPORTED_MODULE_0___default().event).special[Util.TRANSITION_END] = getSpecialTransitionEndEvent()
 }
 
 /**
@@ -11805,7 +11805,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
 (() => {
 "use strict";
 /*!***********************!*\
@@ -11836,11 +11836,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
       behavior: "smooth"
     });
   });
-
   window.onscroll = function (e) {
     var logo = this.document.querySelector('.js-logo');
-
-    if (this.window.scrollY > 900) {
+    if (this.window.scrollY > 500) {
       logo.classList.add('is-small');
     } else {
       logo.classList.remove('is-small');

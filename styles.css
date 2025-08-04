@@ -5679,10 +5679,6 @@ h3 {
   background: rgba(0, 0, 0, 0.6);
 }
 
-h1 {
-  font-size: 3.5rem;
-}
-
 .facebook-icon {
   width: 90px;
   height: auto;
@@ -5716,7 +5712,7 @@ h1 {
 }
 @media (min-width: 768px) {
   .docu__content {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
 }
 
